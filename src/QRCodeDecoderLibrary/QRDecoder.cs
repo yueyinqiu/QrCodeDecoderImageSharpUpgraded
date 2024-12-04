@@ -91,26 +91,9 @@ public sealed class QRDecoder : StaticTables
 
     private readonly ILogger _logger;
 
-    public QRDecoder(ILogger<QRDecoder> logger = null)
+    public QRDecoder(ILogger logger = null)
     {
         this._logger = logger;
-    }
-
-    /// <summary>
-    /// Convert byte array to string using UTF8 encoding
-    /// </summary>
-    /// <param name="dataArray">Input array</param>
-    /// <returns>Output string</returns>
-    public static string ByteArrayToString(byte[] dataArray)
-    {
-        Guard.NotNullOrEmpty(dataArray, nameof(dataArray));
-
-        var decoder = Encoding.UTF8.GetDecoder();
-        int charCount = decoder.GetCharCount(dataArray, 0, dataArray.Length);
-
-        var charArray = new char[charCount];
-        decoder.GetChars(dataArray, 0, dataArray.Length, charArray, 0);
-        return new string(charArray);
     }
 
     /// <summary>
@@ -893,12 +876,10 @@ public sealed class QRDecoder : StaticTables
             this.DataArrayList.Add(DataArray);
 
             // trace
-
-            string dataString = ByteArrayToString(DataArray);
             this._logger?.LogDebug("Version: {0}, Dim: {1}, ErrCorr: {2}, Generator: {3}, Mask: {4}, Group1: {5}:{6}, Group2: {7}:{8}",
                 this.QRCodeVersion.ToString(), this.QRCodeDimension.ToString(), this.ErrorCorrection.ToString(), this.ErrCorrCodewords.ToString(), this.MaskCode.ToString(),
                 this.BlocksGroup1.ToString(), this.DataCodewordsGroup1.ToString(), this.BlocksGroup2.ToString(), this.DataCodewordsGroup2.ToString());
-            this._logger?.LogDebug("Data: {0}", dataString);
+            this._logger?.LogDebug("Data: {0}", Convert.ToBase64String(DataArray));
 
             // successful exit
             return true;
