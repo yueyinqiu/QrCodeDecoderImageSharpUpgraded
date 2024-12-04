@@ -1,4 +1,4 @@
-Modified from [https://github.com/paperdropio/QRCode](https://github.com/paperdropio/QRCode).
+Modified from [https://github.com/paperdropio/QRCode/tree/efcbc726353ebfb9bb9699ba4dd00047d976d179](https://github.com/paperdropio/QRCode/tree/efcbc726353ebfb9bb9699ba4dd00047d976d179).
 
 Directly use it with:
 
