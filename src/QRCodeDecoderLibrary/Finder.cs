@@ -43,12 +43,12 @@
 
 using System;
 
-namespace QRCodeDecoderLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
 /// <summary>
 /// QR code finder class
 /// </summary>
-internal class Finder
+internal sealed class Finder
 	{
 	// horizontal scan
 	internal int Row;

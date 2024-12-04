@@ -1,4 +1,4 @@
-namespace QRCodeSharedLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
     /// <summary>
     /// QR Code encoding modes

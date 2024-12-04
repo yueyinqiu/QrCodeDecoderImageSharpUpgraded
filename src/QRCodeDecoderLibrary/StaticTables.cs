@@ -1,4 +1,4 @@
-namespace QRCodeSharedLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
     public abstract class StaticTables
     {

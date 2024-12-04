@@ -1,16 +1,13 @@
 using System;
 using System.Collections.Generic;
-using System.Drawing;
-using System.Runtime.InteropServices;
 using System.Text;
 using Microsoft.Extensions.Logging;
-using QRCodeSharedLibrary;
 using Stef.Validation;
 using SixLabors.ImageSharp.Processing;
 
-namespace QRCodeDecoderLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
-    public class QRDecoder : StaticTables
+    public sealed class QRDecoder : StaticTables
 
     {
         /// <summary>

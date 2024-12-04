@@ -1,11 +1,11 @@
 ﻿using System;
 
-namespace QRCodeDecoderLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
     /////////////////////////////////////////////////////////////////////
     // QR corner three finders pattern class
     /////////////////////////////////////////////////////////////////////
-    internal class Corner
+    internal sealed class Corner
     {
         internal Finder TopLeftFinder;
         internal Finder TopRightFinder;

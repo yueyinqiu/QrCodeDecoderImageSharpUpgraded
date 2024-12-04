@@ -1,4 +1,4 @@
-namespace QRCodeSharedLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
     /// <summary>
     /// QR Code error correction code enumeration

@@ -1,9 +1,9 @@
 using System;
 using QRCodeSharedLibrary;
 
-namespace QRCodeDecoderLibrary
+namespace QrCodeDecoderImageSharpUpgraded
 {
-    internal class ReedSolomon
+    internal sealed class ReedSolomon
     {
         internal static int INCORRECTABLE_ERROR = -1;
 
