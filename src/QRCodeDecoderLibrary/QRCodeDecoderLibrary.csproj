@@ -3,17 +3,13 @@
     <PropertyGroup>
         <TargetFrameworks>net9.0</TargetFrameworks>
         <Description>This QR Code library supports decoding a QR Code image using ImageSharp</Description>
-        <RootNamespace>QRCodeDecoderLibrary</RootNamespace>
-        <LangVersion>9</LangVersion>
-        <PackageId>QRCodeDecoder-ImageSharp</PackageId>
-        <PackageLicenseUrl>https://www.codeproject.com/info/cpol10.aspx</PackageLicenseUrl>
-        <UserSecretsId>2c11cc4d-9f6a-45ac-aab3-bbcab3318c04</UserSecretsId>
-        <Authors>Deepak Sharma,Uzi Granot;Stef Heyenrath</Authors>
-        <Product>QRCodeDecoderLibrary</Product>
-        <Copyright />
-        <PackageProjectUrl>https://github.com/deathrot/QRCode</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/deathrot/QRCode</RepositoryUrl>
-        <PackageTags>QRCode, C#, Barcode, Decode, ImageSharp</PackageTags>
+        
+		<RootNamespace>QrCodeDecoderImageSharpUpgraded</RootNamespace>
+        <PackageId>QrCodeDecoderImageSharpUpgraded</PackageId>
+        
+		<Authors>Deepak Sharma,Uzi Granot;Stef Heyenrath</Authors>
+        <RepositoryUrl>https://github.com/yueyinqiu/QrCodeDecoderImageSharpUpgraded.git</RepositoryUrl>
+        <PackageTags>QRCode, C#, Decode, ImageSharp</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
 
@@ -25,10 +21,6 @@
     <ItemGroup>
         <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
         <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\QRCodeSharedLibrary\QRCodeSharedLibrary.csproj" />
     </ItemGroup>
 
 </Project>
