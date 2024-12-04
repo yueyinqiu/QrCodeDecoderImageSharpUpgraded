@@ -1,28 +1,27 @@
-namespace QrCodeDecoderImageSharpUpgraded
+namespace QrCodeDecoderImageSharpUpgraded;
+
+/// <summary>
+/// QR Code error correction code enumeration
+/// </summary>
+public enum ErrorCorrection
 {
     /// <summary>
-    /// QR Code error correction code enumeration
+    /// Low (01)
     /// </summary>
-    public enum ErrorCorrection
-    {
-        /// <summary>
-        /// Low (01)
-        /// </summary>
-        L,
+    L,
 
-        /// <summary>
-        /// Medium (00)
-        /// </summary>
-        M,
+    /// <summary>
+    /// Medium (00)
+    /// </summary>
+    M,
 
-        /// <summary>
-        /// Medium-high (11)
-        /// </summary>
-        Q,
+    /// <summary>
+    /// Medium-high (11)
+    /// </summary>
+    Q,
 
-        /// <summary>
-        /// High (10)
-        /// </summary>
-        H
-    }
+    /// <summary>
+    /// High (10)
+    /// </summary>
+    H
 }

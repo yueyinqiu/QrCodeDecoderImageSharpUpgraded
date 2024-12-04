@@ -1,88 +1,87 @@
-namespace QrCodeDecoderImageSharpUpgraded
+namespace QrCodeDecoderImageSharpUpgraded;
+
+/// <summary>
+/// QR Code encoding modes
+/// </summary>
+public enum EncodingMode
 {
     /// <summary>
-    /// QR Code encoding modes
+    /// Terminator
     /// </summary>
-    public enum EncodingMode
-    {
-        /// <summary>
-        /// Terminator
-        /// </summary>
-        Terminator,
+    Terminator,
 
-        /// <summary>
-        /// Numeric
-        /// </summary>
-        Numeric,
+    /// <summary>
+    /// Numeric
+    /// </summary>
+    Numeric,
 
-        /// <summary>
-        /// Alpha numeric
-        /// </summary>
-        AlphaNumeric,
+    /// <summary>
+    /// Alpha numeric
+    /// </summary>
+    AlphaNumeric,
 
-        /// <summary>
-        /// Append
-        /// </summary>
-        Append,
+    /// <summary>
+    /// Append
+    /// </summary>
+    Append,
 
-        /// <summary>
-        /// byte encoding
-        /// </summary>
-        Byte,
+    /// <summary>
+    /// byte encoding
+    /// </summary>
+    Byte,
 
-        /// <summary>
-        /// FNC1 first
-        /// </summary>
-        FNC1First,
+    /// <summary>
+    /// FNC1 first
+    /// </summary>
+    FNC1First,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown6,
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown6,
 
-        /// <summary>
-        /// Extended Channel Interpretaion (ECI) mode
-        /// </summary>
-        ECI,
+    /// <summary>
+    /// Extended Channel Interpretaion (ECI) mode
+    /// </summary>
+    ECI,
 
-        /// <summary>
-        /// Kanji encoding (not implemented by this software)
-        /// </summary>
-        Kanji,
+    /// <summary>
+    /// Kanji encoding (not implemented by this software)
+    /// </summary>
+    Kanji,
 
-        /// <summary>
-        /// FNC1 second
-        /// </summary>
-        FNC1Second,
+    /// <summary>
+    /// FNC1 second
+    /// </summary>
+    FNC1Second,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown10,
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown10,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown11,
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown11,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown12,
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown12,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown13,
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown13,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown14,
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown14,
 
-        /// <summary>
-        /// Unknown encoding constant
-        /// </summary>
-        Unknown15,
-    }
+    /// <summary>
+    /// Unknown encoding constant
+    /// </summary>
+    Unknown15,
 }
