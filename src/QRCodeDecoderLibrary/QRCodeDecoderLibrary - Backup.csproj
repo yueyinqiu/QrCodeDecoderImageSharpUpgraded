@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+        <Description>This QR Code library supports decoding a QR Code image using ImageSharp</Description>
+        <RootNamespace>QRCodeDecoderLibrary</RootNamespace>
+        <LangVersion>9</LangVersion>
+        <PackageId>QRCodeDecoder-ImageSharp</PackageId>
+        <PackageReadmeFile>QRCodeDecoder.PackageReadme.md</PackageReadmeFile>
+        <PackageLicenseUrl>https://www.codeproject.com/info/cpol10.aspx</PackageLicenseUrl>
+        <UserSecretsId>2c11cc4d-9f6a-45ac-aab3-bbcab3318c04</UserSecretsId>
+        <Authors>Deepak Sharma,Uzi Granot;Stef Heyenrath</Authors>
+        <Product>QRCodeDecoderLibrary</Product>
+        <Copyright />
+        <PackageProjectUrl>https://github.com/deathrot/QRCode</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/deathrot/QRCode</RepositoryUrl>
+        <PackageTags>QRCode, C#, Barcode, Decode, ImageSharp</PackageTags>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="../../release/QRCodeDecoder.PackageReadme.md" Pack="true" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="SixLabors.ImageSharp" Version="1.0.4" />
+        <PackageReference Include="Stef.Validation" Version="0.0.3" />
+    </ItemGroup>
+
+    <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0' or '$(TargetFramework)' == 'netstandard2.1' or '$(TargetFramework)' == 'net5.0'">
+        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="5.0.0" />
+        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\QRCodeSharedLibrary\QRCodeSharedLibrary.csproj" />
+    </ItemGroup>
+
+</Project>
