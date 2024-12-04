@@ -1,12 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFrameworks>net7.0</TargetFrameworks>
+        <TargetFrameworks>net9.0</TargetFrameworks>
         <Description>This QR Code library supports decoding a QR Code image using ImageSharp</Description>
         <RootNamespace>QRCodeDecoderLibrary</RootNamespace>
         <LangVersion>9</LangVersion>
         <PackageId>QRCodeDecoder-ImageSharp</PackageId>
-        <PackageReadmeFile>QRCodeDecoder.PackageReadme.md</PackageReadmeFile>
         <PackageLicenseUrl>https://www.codeproject.com/info/cpol10.aspx</PackageLicenseUrl>
         <UserSecretsId>2c11cc4d-9f6a-45ac-aab3-bbcab3318c04</UserSecretsId>
         <Authors>Deepak Sharma,Uzi Granot;Stef Heyenrath</Authors>
@@ -17,10 +16,6 @@
         <PackageTags>QRCode, C#, Barcode, Decode, ImageSharp</PackageTags>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     </PropertyGroup>
-
-    <ItemGroup>
-        <None Include="../../release/QRCodeDecoder.PackageReadme.md" Pack="true" PackagePath="" />
-    </ItemGroup>
 
     <ItemGroup>
         <PackageReference Include="SixLabors.ImageSharp" Version="2.1.3" />
