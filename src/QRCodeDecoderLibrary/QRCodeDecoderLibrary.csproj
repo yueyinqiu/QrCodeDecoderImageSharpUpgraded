@@ -1,25 +1,33 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
         <TargetFrameworks>net9.0</TargetFrameworks>
-		
-		<RootNamespace>QrCodeDecoderImageSharpUpgraded</RootNamespace>
-        <PackageId>QrCodeDecoderImageSharpUpgraded</PackageId>
-        
-		<Authors>Deepak Sharma,Uzi Granot;Stef Heyenrath</Authors>
-        <RepositoryUrl>https://github.com/yueyinqiu/QrCodeDecoderImageSharpUpgraded.git</RepositoryUrl>
-        <PackageTags>QRCode, C#, Decode, ImageSharp</PackageTags>
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<AssemblyName>QrCodeDecoderImageSharpUpgraded</AssemblyName>
+		<RootNamespace>$(AssemblyName)</RootNamespace>
+		<IsTrimmable>true</IsTrimmable>
+
+		<Version>0.0.1</Version>
+		<PackageId>$(AssemblyName)</PackageId>
+		<RepositoryUrl>https://github.com/yueyinqiu/QrCodeDecoderImageSharpUpgraded.git</RepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="SixLabors.ImageSharp" Version="3.1.6" />
         <PackageReference Include="Stef.Validation" Version="0.1.1" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
-        <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
-    </ItemGroup>
-
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="9.0.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.0" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<None Include="../../README.md">
+			<Pack>True</Pack>
+			<PackagePath>/</PackagePath>
+		</None>
+	</ItemGroup>
 </Project>
